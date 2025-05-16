@@ -5,8 +5,8 @@ import pickle
 from sklearn.preprocessing import LabelEncoder
 
 app = Flask(__name__)
-model = pickle.load(open('model.pkl', 'rb'))
-expected_columns = pickle.load(open('columns.pkl', 'rb'))
+model = pickle.load(open('E:\DEPI\Technical\DEPI\Graduation_Project\Sales-Forecasting-and-Demand-Prediction\src\Deployment\FINAL\model.pkl', 'rb'))
+expected_columns = pickle.load(open('E:\DEPI\Technical\DEPI\Graduation_Project\Sales-Forecasting-and-Demand-Prediction\src\Deployment\FINAL\columns.pkl', 'rb'))
 
 @app.route('/')
 def home():
